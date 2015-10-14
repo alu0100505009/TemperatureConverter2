@@ -1,0 +1,22 @@
+{
+  "name": "temperatureconverter",
+  "version": "0.0.1",
+  "description": "conversor de temperatura",
+  "main": "temperature.js",
+  "scripts": {
+    "test": "open/test/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierPestanoRon/TemperatureConverter2.git"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "Javier Pestano Ron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierPestanoRon/TemperatureConverter2/issues"
+  },
+  "homepage": "https://github.com/JavierPestanoRon/TemperatureConverter2#readme"
+}
