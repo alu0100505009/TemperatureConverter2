@@ -1,29 +1,48 @@
-var assert = chai.assert;
+var expect = chai.expect;
 
-suite('temperature', function() {
-    test('32F = 0C', function() {
+describe("Test Funcionales", function(){
+ 
+    /*it("32F = 0C", function(){
+     var temp = new Temperatura(32,"F");
+        expect(temp.get_valor()).to.equal(32);
+        expect(temp.get_tipo()).to.equal("F");       
+    });*/
+    
+    it("32F = 0C", function(){
+        var temp = new Temperatura();  
+        temp.set_valor(32);
+        temp.set_tipo("F");
+        var result =temp.to_c();
+        expect(result).to.equal(0);
+    });
+    /*it('32F = 0C', function() {
         original.value = "32F";
         calculate();
         assert.deepEqual(converted.innerHTML, "0.0 Celsius");
     });
-    test('45C = 113.0 Farenheit', function() {
+    
+    it('45C = 113.0 Farenheit', function() {
         original.value = "45C";
         calculate();
         assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
     });
-    test('5X = error', function() {
+    
+    it('5X = error', function() {
         original.value = "5X";
         calculate();
         assert.match(converted.innerHTML, /ERROR/);
     });
-    test('Buenos dias = error', function() {
+    
+    it('Buenos dias = error', function() {
         original.value = "Buenos dias";
         calculate();
         assert.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
     });
-    test('45.3 = error', function() {
+    
+    it('45.3 = error', function() {
         original.value = "45.3";
         calculate();
         assert.notEqual(converted.innerHTML, 113.5, "/ERROR/");
-    });
+    });*/
+    
 });
