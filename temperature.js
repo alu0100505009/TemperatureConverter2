@@ -12,3 +12,12 @@ function Temperatura (valor, tipo) {
 
 //Temperatura hereda de Medida.
 Temperatura.prototype = new Medida();
+
+// Getters y Setters
+Medida.prototype.get_valor = function(){return this.valor_;}
+
+Medida.prototype.get_tipo = function(){return this.tipo_;}
+
+Medida.prototype.set_valor = function(valor){this.valor_ = valor;}
+
+Medida.prototype.set_tipo = function(tipo){this.tipo_ = tipo;}
