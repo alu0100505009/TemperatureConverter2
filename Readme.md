@@ -10,8 +10,3 @@ En esta ocasion la practica ha consistido en la realizacion de un conversor de t
  - Gh-page de la práctica: http://javierpestanoron.github.io/TemperatureConverter2/index.html
  - Test de la práctica: http://javierpestanoron.github.io/TemperatureConverter2/test/index.html
 
-
-
- **NOTA: El número de commits es menos ya que por problemas con los modules tuve que subir nuevamente la práctica**
-
-
