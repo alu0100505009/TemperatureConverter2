@@ -36,5 +36,28 @@ Temperatura.prototype.to_c = function(){
 function calculate() {
   var result = new Temperatura();
   var temp = original.value;
-
+ 
+  if (temp) {
+    var regexp = /([-+]?\d+(?:\.\d*)?(?:[eE][-+]?\d+)?)\s*([fFcC])/;
+    var valor = temp.match(regexp);
+    if(valor){
+        var t = new Temperatura(); 
+        
+        t.set_valor(parseFloat(valor[1]));
+        t.set_tipo(valor[2]);
+        
+        if (t.get_tipo() == 'c' || t.get_tipo() == 'C'){
+            result.set_valor(t.to_f());
+            result.set_tipo("F");
+        }
+        else{
+            result.set_valor(t.to_c());
+            result.set_tipo("C");
+        }
+    result = result.get_valor() + " " + result.get_tipo();
+    converted.innerHTML = result;
+    }
+    else
+        converted.innerHTML = "ERROR! Prueba con algo como esto '-4.2C' ";
+  }
 }
