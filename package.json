@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/JavierPestanoRon/TemperatureConverter2/issues"
   },
-  "homepage": "https://github.com/JavierPestanoRon/TemperatureConverter2#readme"
+  "homepage": "https://github.com/JavierPestanoRon/TemperatureConverter2#readme",
+  "devDependencies": {
+    "chai": "^3.3.0"
+  }
 }
