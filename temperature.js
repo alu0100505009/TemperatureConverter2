@@ -32,3 +32,9 @@ Temperatura.prototype.to_f = function(){
 Temperatura.prototype.to_c = function(){
   return (this.get_valor()-32)*5/9;
 }
+
+function calculate() {
+  var result = new Temperatura();
+  var temp = original.value;
+
+}
