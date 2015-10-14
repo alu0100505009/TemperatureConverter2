@@ -4,7 +4,7 @@
   "description": "conversor de temperatura",
   "main": "temperature.js",
   "scripts": {
-    "test": "open test/index.html"
+    "test": "node static-server"
   },
   "repository": {
     "type": "git",
