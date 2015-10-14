@@ -21,3 +21,14 @@ Medida.prototype.get_tipo = function(){return this.tipo_;}
 Medida.prototype.set_valor = function(valor){this.valor_ = valor;}
 
 Medida.prototype.set_tipo = function(tipo){this.tipo_ = tipo;}
+
+
+// Pasamos C a F
+Temperatura.prototype.to_f = function(){
+  return (this.get_valor()*9/5)+32;
+}
+
+// Pasamos F a C
+Temperatura.prototype.to_c = function(){
+  return (this.get_valor()-32)*5/9;
+}
