@@ -25,11 +25,21 @@ describe("Test Funcionales", function(){
     });
 
     it("5X === ERROR", function() {
-      //window.onload = function() {
-        var result = new Temperatura(5,0,"X");
-        var temp = original.value;
+        //var result = new Temperatura(5,0,"X");
+        //var temp = original.value;
+        var temp = new Temperatura();  
+        temp.set_valor(5);
+        temp.set_tipo("X");
         calculate();
         expect(converted.innerHTML).to.match("/no es correcto/");
+    });
+    
+    it("Debería ser: 3.2e4F", function() {
+        var temp = new Temperatura(0,"C");
+        temp.set_valor(3.2e4);
+        temp.set_tipo("F");
+        expect(temp.get_valor()).to.equal(3.2e4);
+        expect(temp.get_tipo()).to.equal("F");
     });
     /*it('32F = 0C', function() {
         original.value = "32F";
