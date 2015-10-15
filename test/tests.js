@@ -30,7 +30,6 @@ describe("Test Funcionales", function(){
         var temp = original.value;
         calculate();
         expect(converted.innerHTML).to.match("/no es correcto/");
-      }
     });
     /*it('32F = 0C', function() {
         original.value = "32F";
