@@ -24,23 +24,22 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    /*it("5X === ERROR", function() {
+    it("5X === ERROR", function() {
         //var result = new Temperatura(5,0,"X");
         //var temp = original.value;
         var temp = new Temperatura();  
         temp.set_valor(5);
         temp.set_tipo("X");
         calculate();
-        expect(converted.innerHTML).to.match("/no es correcto/");
-    });*/
+        expect(converted.innerHTML).to.match("/ERROR/");
+    });
     
-    it('5X = error', function() {
-        var original;
+    /*it('5X = error', function() {
         var temp = new Temperatura();
         original.value = "5X";
         calculate();
         expect.match(converted.innerHTML, /ERROR/);
-    });
+    });*/
     /*it('32F = 0C', function() {
         original.value = "32F";
         calculate();
