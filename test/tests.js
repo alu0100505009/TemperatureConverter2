@@ -26,13 +26,22 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    /*it("PRUEBA", function() {
-        var temp = new Temperatura();  
-        temp.set_valor(5);
-        temp.set_tipo("X");
+    it("PRUEBA", function() {
+       var result = new Temperatura(); 
+        var temp = original.value = "5X";
         calculate();
-        expect(fin.innerHTML).to.match("/ERROR/");
-    });*/
+        //expect(result.innerHTML).to.match("/ERROR/");
+         expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
+    });
+    
+    it("PRUEBA 2", function() {
+       var result = new Temperatura(); 
+        var temp = original.value = "32F";
+        calculate();
+        //expect(result.innerHTML).to.match("/ERROR/");
+         //expect.equal(converted.innerHTML, '0C');
+        expect.deepEqual(converted.innerHTML, "0C");
+    });
     
     it("32,0576F === 0.032C", function() {
       window.onload = function() {
