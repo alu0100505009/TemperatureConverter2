@@ -24,14 +24,21 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    it("5X === ERROR", function() {
-        //var result = new Temperatura(5,0,"X");
-        //var temp = original.value;
+   /* it("5X === ERROR", function() {
         var temp = new Temperatura();  
         temp.set_valor(5);
         temp.set_tipo("X");
         calculate();
         expect(converted.innerHTML).to.match("/ERROR/");
+    });*/
+    
+    it("32,0576F === 0.032C", function() {
+      window.onload = function() {
+        var temp = new Temperatura(-2.3,0,"C");
+        var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
+        //document.getElementById("resultado").innerHTML = res;
+        expect(converted.innerHTML).to.equal("El resultado es: -2.3 C");
+      }
     });
     
     /*it('5X = error', function() {
