@@ -23,13 +23,12 @@ describe("Test Funcionales", function(){
         var result =temp.to_f();
         expect(result).to.equal(113);
     });
-    
-     it("32,0576F === 0.032C", function() {
+
+    it("5X === ERROR", function() {
       window.onload = function() {
-        var temp = new Temperatura(-2.3,0,"C");
-        var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
-        document.getElementById("resultado").innerHTML = res;
-        expect(fin.innerHTML).to.equal("El resultado es: -2.3 C");
+        var temp = new Temperatura(5,0,"X");
+        conversor();
+        expect(fin.innerHTML).to.match("/no es correcto/");
       }
     });
     /*it('32F = 0C', function() {
