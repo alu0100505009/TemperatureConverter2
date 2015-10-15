@@ -3,7 +3,7 @@ var expect = chai.expect;
 describe("Test Funcionales", function(){
     
     var fin = document.getElementById("converted");
-    var original = document.getElementById("original");
+    var original;
  
     /*it("32F = 0C", function(){
      var temp = new Temperatura(32,"F");
@@ -27,7 +27,7 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    it("PRUEBA", function() {
+    it("PRUEBA1", function() {
        var result = new Temperatura(); 
         var temp = original.value = "5X";
         calculate();
