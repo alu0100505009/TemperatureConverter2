@@ -24,7 +24,7 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    it("5X === ERROR", function() {
+   /* it("5X === ERROR", function() {
         //var result = new Temperatura(5,0,"X");
         //var temp = original.value;
         var temp = new Temperatura();  
@@ -32,12 +32,12 @@ describe("Test Funcionales", function(){
         temp.set_tipo("X");
         calculate();
         expect(converted.innerHTML).to.match("/no es correcto/");
-    });
+    });*/
     
     it("Debería ser: 3.2e4F", function() {
    original.value = "5X";
         calculate();
-        expect.match(converted.innerHTML, /ERROR/);
+        expect.match(converted.innerHTML, /"ERROR! Prueba con algo como esto '-4.2C' "/);
     });
     /*it('32F = 0C', function() {
         original.value = "32F";
