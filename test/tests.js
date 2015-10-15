@@ -34,8 +34,8 @@ describe("Test Funcionales", function(){
         expect(converted.innerHTML).to.match("/no es correcto/");
     });*/
     
-    it("Debería ser: 3.2e4F", function() {
-   original.value = "5X";
+    it('5X = error', function() {
+        original.value = "5X";
         calculate();
         expect.match(converted.innerHTML, /ERROR/);
     });
