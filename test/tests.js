@@ -15,6 +15,14 @@ describe("Test Funcionales", function(){
         var result =temp.to_c();
         expect(result).to.equal(0);
     });
+    
+    it("45C = 113F", function(){
+        var temp = new Temperatura();  
+        temp.set_valor(45);
+        temp.set_tipo("C");
+        var result =temp.to_f();
+        expect(result).to.equal(113);
+    });
     /*it('32F = 0C', function() {
         original.value = "32F";
         calculate();
