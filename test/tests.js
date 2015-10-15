@@ -3,7 +3,7 @@ var expect = chai.expect;
 describe("Test Funcionales", function(){
     
     var fin = document.getElementById("converted");
-    var original = document.getElementById("original");
+    //var original = document.getElementById("original");
  
     /*it("32F = 0C", function(){
      var temp = new Temperatura(32,"F");
@@ -27,22 +27,22 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    it("PRUEBA1", function() {
+    /*it("PRUEBA1", function() {
        var result = new Temperatura(); 
         var temp = "5X";
         calculate();
         //expect(result.innerHTML).to.match("/ERROR/");
          expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
-    });
+    });*/
     
-    it("PRUEBA 3", function() {
+    /*it("PRUEBA 3", function() {
        var result = new Temperatura(); 
         original = "32F";
         calculate();
         //expect(result.innerHTML).to.match("/ERROR/");
          //expect.equal(converted.innerHTML, '0C');
         expect.deepEqual(converted.innerHTML, "0C");
-    });
+    });*/
     
     it("32,0576F === 0.032C", function() {
       window.onload = function() {
