@@ -26,13 +26,13 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    it("PRUEBA", function() {
+    /*it("PRUEBA", function() {
         var temp = new Temperatura();  
         temp.set_valor(5);
         temp.set_tipo("X");
         calculate();
         expect(fin.innerHTML).to.match("/ERROR/");
-    });
+    });*/
     
     it("32,0576F === 0.032C", function() {
       window.onload = function() {
