@@ -35,11 +35,9 @@ describe("Test Funcionales", function(){
     });
     
     it("Debería ser: 3.2e4F", function() {
-        var temp = new Temperatura(0,"C");
-        temp.set_valor(3.2e4);
-        temp.set_tipo("F");
-        expect(temp.get_valor()).to.equal(3.2e4);
-        expect(temp.get_tipo()).to.equal("F");
+   original.value = "5X";
+        calculate();
+        expect.match(converted.innerHTML, /ERROR/);
     });
     /*it('32F = 0C', function() {
         original.value = "32F";
