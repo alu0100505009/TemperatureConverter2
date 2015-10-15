@@ -38,7 +38,6 @@ describe("Test Funcionales", function(){
       window.onload = function() {
         var temp = new Temperatura(-2.3,0,"C");
         var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
-        //document.getElementById("resultado").innerHTML = res;
         expect(converted.innerHTML).to.equal("El resultado es: -2.3 C");
       }
     });
