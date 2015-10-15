@@ -25,8 +25,9 @@ describe("Test Funcionales", function(){
     });
 
     it("5X === ERROR", function() {
-      window.onload = function() {
+      //window.onload = function() {
         var result = new Temperatura(5,0,"X");
+        var temp = original.value;
         calculate();
         expect(converted.innerHTML).to.match("/no es correcto/");
       }
