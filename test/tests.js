@@ -27,8 +27,8 @@ describe("Test Funcionales", function(){
     it("5X === ERROR", function() {
       window.onload = function() {
         var temp = new Temperatura(5,0,"X");
-        conversor();
-        expect(fin.innerHTML).to.match("/no es correcto/");
+        calculate();
+        expect(converted.innerHTML).to.match("/no es correcto/");
       }
     });
     /*it('32F = 0C', function() {
