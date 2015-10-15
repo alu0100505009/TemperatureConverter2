@@ -1,6 +1,8 @@
 var expect = chai.expect;
 
 describe("Test Funcionales", function(){
+    
+    var fin = document.getElementById("converted");
  
     /*it("32F = 0C", function(){
      var temp = new Temperatura(32,"F");
