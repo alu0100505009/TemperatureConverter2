@@ -35,7 +35,7 @@ describe("Test Funcionales", function(){
     });*/
     
     it('5X = error', function() {
-        var original.value = "5X";
+        var original;
         var temp = new Temperatura();
         original.value = "5X";
         calculate();
