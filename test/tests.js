@@ -45,8 +45,7 @@ describe("Test Funcionales", function(){
     });*/
     
     it("Prueba completa", function() {
-            var result = new Temperatura();  
-            var temp = "32F";
+            origin.value = "32F";
             calculate();
             expect(result).to.equal(0);
     });
