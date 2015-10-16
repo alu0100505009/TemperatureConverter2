@@ -6,11 +6,11 @@
   <link rel="stylesheet" media="all" href="mocha.css">
 </head>
 <body>
+    <div><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td></div>
+  <div><span class="output" id="converted"></span></td></div>
   <div id="mocha"><p><a href=".">Index</a></p></div>
   <div id="messages"></div>
   <div id="fixtures"></div>
-  <input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-  <span class="output" id="converted"></span></td>
   <script src="mocha.js"></script>
   <script src="chai.js"></script>
   <script src="blanket.js" data-cover-adapter="mocha-blanket.js"></script>
