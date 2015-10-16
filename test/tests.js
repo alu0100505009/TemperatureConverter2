@@ -44,8 +44,16 @@ describe("Test Funcionales", function(){
         expect.deepEqual(converted.innerHTML, "0C");
     });*/
     
+    it("Prueba completa", function() {
+        var result = new Temperatura();  
+        var temp = "32F";
+        calculate();
+        expect(result).to.equal(0);
+       }
+    });
+    
     it("32,0576F === 0.032C", function() {
-      window.onload = function() {
+      //window.onload = function() {
         var temp = new Temperatura(-2.3,0,"C");
         var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
         expect(fin.innerHTML).to.equal("El resultado es: -2.3 C");
@@ -54,7 +62,7 @@ describe("Test Funcionales", function(){
     
     
     it("5X === ERROR", function() {
-      window.onload = function() {
+      //window.onload = function() {
         var temp = new Temperatura(5,0,"X");
         conversor();
         expect(fin.innerHTML).to.match("/no es correcto/");
