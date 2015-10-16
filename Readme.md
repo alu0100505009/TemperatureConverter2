@@ -5,8 +5,9 @@ En esta ocasion la practica ha consistido en la realizacion de un conversor de t
 
 ----------
  
-
+ - Página personal: http://javierpestanoron.github.io/
  - Repositorio: https://github.com/JavierPestanoRon/TemperatureConverter2/tree/master
  - Gh-page de la práctica: http://javierpestanoron.github.io/TemperatureConverter2/index.html
+ - Test con cubrimiento Blanket: http://javierpestanoron.github.io/TemperatureConverter2/test/test_blanket.html
  - Test de la práctica: http://javierpestanoron.github.io/TemperatureConverter2/test/index.html
 
