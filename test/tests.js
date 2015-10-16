@@ -43,8 +43,8 @@ describe("Test Funcionales", function(){
         expect.deepEqual(converted.innerHTML, "0C");
     });*/
     
-    it("Prueba completa", function() {
-        original.value = "32F";
+    it("Prueba completa 2", function() {
+        original = "32F";
         expect(calculate()).to.equal(0);
     });
     
