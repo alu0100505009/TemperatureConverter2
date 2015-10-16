@@ -45,7 +45,7 @@ describe("Test Funcionales", function(){
     it("Prueba completa 2", function() {
         original = "32F";
         calculate();
-        expect(result.innerHTML).to.equal(0);
+        expect(converted.innerHTML).to.equal(0);
     });
     
     it("32,0576F === 0.032C", function() {
