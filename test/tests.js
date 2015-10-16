@@ -42,10 +42,10 @@ describe("Test Funcionales", function(){
         expect.deepEqual(converted.innerHTML, "0C");
     });*/
     
-    it("Prueba completa 2", function() {
+    it("Prueba completa 3", function() {
         original = "32F";
         calculate();
-        expect(converted.innerHTML).to.equal("0");
+        expect(converted.innerHTML).to.equal('0');
     });
     
     it("32,0576F === 0.032C", function() {
