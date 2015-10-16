@@ -42,8 +42,10 @@ describe("Test Funcionales", function(){
     });*/
     
     it("Prueba completa", function() {
+              window.onload = function() {
             original.value = "32F";
             expect(calculate()).to.equal(0);
+              }
     });
     
     it("32,0576F === 0.032C", function() {
