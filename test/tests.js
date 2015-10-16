@@ -44,16 +44,19 @@ describe("Test Funcionales", function(){
     
     it('Buenos dias = error', function() {
         original.value = "Buenos dias";
-        expect(calculate()).to.equal("ERROR! Prueba con algo como esto \'-4.2C\'");
+        calculate()
+        expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
     });
     
     it("Prueba completa 4", function() {
         original.value = "32F";
-        expect(calculate()).to.equal(0);
+        calculate()
+        expect(convertedinnerHTML).to.equal(0);
     });
     it("Prueba completa 5", function() {
         original.value = "45C";
-        expect(calculate()).to.equal(113);
+        calculate()
+        expect(converted.innerHTML).to.equal(113);
     });
     
     it("32,0576F === 0.032C", function() {
@@ -69,7 +72,7 @@ describe("Test Funcionales", function(){
       window.onload = function() {
         var temp = new Temperatura(5,0,"X");
         calculate();
-        expect(fin.innerHTML).to.match("/no es correcto/");
+        expect(converted.innerHTML).to.match("/no es correcto/");
       }
     });
     
