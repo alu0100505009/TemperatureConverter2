@@ -52,17 +52,18 @@ describe("Test Funcionales", function(){
     });
     
     it("32,0576F === 0.032C", function() {
-      //window.onload = function() {
+      window.onload = function() {
         var temp = new Temperatura(-2.3,0,"C");
         var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
         expect(fin.innerHTML).to.equal("El resultado es: -2.3 C");
+      }
     });
     
     
     it("5X === ERROR", function() {
       //window.onload = function() {
         var temp = new Temperatura(5,0,"X");
-        conversor();
+        calculate();
         expect(fin.innerHTML).to.match("/no es correcto/");
     });
     
