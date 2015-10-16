@@ -45,18 +45,19 @@ describe("Test Funcionales", function(){
     it('Buenos dias = error', function() {
         original.value = "Buenos dias";
         calculate()
-        expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
+       /* expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);*/
+        expect(converted.innerHTML).to.equal('ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
     });
     
     it("Prueba completa 4", function() {
         original.value = "32F";
         calculate()
-        expect(convertedinnerHTML).to.equal(0);
+        expect(converted.innerHTML).to.equal(0);
     });
     it("Prueba completa 5", function() {
         original.value = "45C";
         calculate()
-        expect(converted.innerHTML).to.equal(113);
+        expect(converted.innerHTML).to.equal("113F");
     });
     
     it("32,0576F === 0.032C", function() {
