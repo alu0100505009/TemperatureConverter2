@@ -44,9 +44,7 @@ describe("Test Funcionales", function(){
     
     it('Buenos dias = error', function() {
         original.value = "Buenos dias";
-        calculate();
-        //expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
-        expect(result.innerHTML).to.equal("ERROR! Prueba con algo como esto \'-4.2C\'");
+        expect(calculate()).to.equal("ERROR! Prueba con algo como esto \'-4.2C\'");
     });
     
     it("Prueba completa 4", function() {
