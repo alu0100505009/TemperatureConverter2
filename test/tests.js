@@ -61,10 +61,11 @@ describe("Test Funcionales", function(){
     
     
     it("5X === ERROR", function() {
-      //window.onload = function() {
+      window.onload = function() {
         var temp = new Temperatura(5,0,"X");
         calculate();
         expect(fin.innerHTML).to.match("/no es correcto/");
+      }
     });
     
     /*it('5X = error', function() {
