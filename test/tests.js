@@ -45,10 +45,12 @@ describe("Test Funcionales", function(){
     });*/
     
     it("Prueba completa", function() {
-        var result = new Temperatura();  
-        var temp = "32F";
-        calculate();
-        expect(result).to.equal(0);
+        window.onload = function() {
+            var result = new Temperatura();  
+            var temp = "32F";
+            calculate();
+            expect(result).to.equal(0);
+        }
     });
     
     it("32,0576F === 0.032C", function() {
