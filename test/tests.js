@@ -2,7 +2,6 @@ var expect = chai.expect;
 
 describe("Test Funcionales", function(){
     
-    var original = document.getElementById("original");
      
     /*it("32F = 0C", function(){
      var temp = new Temperatura(32,"F");
@@ -46,7 +45,7 @@ describe("Test Funcionales", function(){
     it("Prueba completa 2", function() {
         original = "32F";
         calculate();
-        expect(result).to.equal(0);
+        expect(result.innerHTML).to.equal(0);
     });
     
     it("32,0576F === 0.032C", function() {
