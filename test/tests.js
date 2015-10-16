@@ -1,10 +1,7 @@
 var expect = chai.expect;
 
 describe("Test Funcionales", function(){
-    
-    var fin = document.getElementById("converted");
-    //var original = document.getElementById("original");
- 
+     
     /*it("32F = 0C", function(){
      var temp = new Temperatura(32,"F");
         expect(temp.get_valor()).to.equal(32);
@@ -45,7 +42,7 @@ describe("Test Funcionales", function(){
     });*/
     
     it("Prueba completa", function() {
-            origin.value = "32F";
+            original.value = "32F";
             expect(calculate()).to.equal(0);
     });
     
