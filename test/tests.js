@@ -45,14 +45,15 @@ describe("Test Funcionales", function(){
     
     it("Prueba completa 2", function() {
         original = "32F";
-        expect(calculate()).to.equal(0);
+        calculate();
+        expect(result).to.equal(0);
     });
     
     it("32,0576F === 0.032C", function() {
       window.onload = function() {
         var temp = new Temperatura(-2.3,0,"C");
         var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
-        expect(fin.innerHTML).to.equal("El resultado es: -2.3 C");
+        expect(result.innerHTML).to.equal("El resultado es: -2.3 C");
       }
     });
     
