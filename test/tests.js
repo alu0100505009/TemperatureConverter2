@@ -56,7 +56,6 @@ describe("Test Funcionales", function(){
         var temp = new Temperatura(-2.3,0,"C");
         var res = "El resultado es: " + temp.get_valor() + " " + temp.get_tipo();
         expect(fin.innerHTML).to.equal("El resultado es: -2.3 C");
-      }
     });
     
     
@@ -65,7 +64,6 @@ describe("Test Funcionales", function(){
         var temp = new Temperatura(5,0,"X");
         conversor();
         expect(fin.innerHTML).to.match("/no es correcto/");
-      }
     });
     
     /*it('5X = error', function() {
