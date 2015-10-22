@@ -1,14 +1,7 @@
 var expect = chai.expect;
 
 describe("Test Funcionales", function(){
-    
-     
-    /*it("32F = 0C", function(){
-     var temp = new Temperatura(32,"F");
-        expect(temp.get_valor()).to.equal(32);
-        expect(temp.get_tipo()).to.equal("F");       
-    });*/
-    
+
     it("32F = 0C", function(){
         var temp = new Temperatura();  
         temp.set_valor(32);
@@ -25,23 +18,6 @@ describe("Test Funcionales", function(){
         expect(result).to.equal(113);
     });
 
-    /*it("PRUEBA1", function() {
-       var result = new Temperatura(); 
-        var temp = "5X";
-        calculate();
-        //expect(result.innerHTML).to.match("/ERROR/");
-         expect.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
-    });*/
-    
-    /*it("PRUEBA 3", function() {
-       var result = new Temperatura(); 
-        original = "32F";
-        calculate();
-        //expect(result.innerHTML).to.match("/ERROR/");
-         //expect.equal(converted.innerHTML, '0C');
-        expect.deepEqual(converted.innerHTML, "0C");
-    });*/
-    
     it('Buenos dias = error', function() {
         original.value = "Buenos dias";
         calculate()
@@ -69,7 +45,6 @@ describe("Test Funcionales", function(){
       }
     });
     
-    
     it("5X === ERROR", function() {
       window.onload = function() {
         var temp = new Temperatura(5,0,"X");
@@ -77,43 +52,5 @@ describe("Test Funcionales", function(){
         expect(converted.innerHTML).to.match("/no es correcto/");
       }
     });
-    
-
-    
-    /*it('5X = error', function() {
-        var temp = new Temperatura();
-        original.value = "5X";
-        calculate();
-        expect.match(converted.innerHTML, /ERROR/);
-    });*/
-    /*it('32F = 0C', function() {
-        original.value = "32F";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "0.0 Celsius");
-    });
-    
-    it('45C = 113.0 Farenheit', function() {
-        original.value = "45C";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
-    });
-    
-    it('5X = error', function() {
-        original.value = "5X";
-        calculate();
-        assert.match(converted.innerHTML, /ERROR/);
-    });
-    
-    it('Buenos dias = error', function() {
-        original.value = "Buenos dias";
-        calculate();
-        assert.equal(converted.innerHTML, 'ERROR! Prueba con algo como esto \'-4.2C\' ', /ERROR/);
-    });
-    
-    it('45.3 = error', function() {
-        original.value = "45.3";
-        calculate();
-        assert.notEqual(converted.innerHTML, 113.5, "/ERROR/");
-    });*/
-    
+   
 });
