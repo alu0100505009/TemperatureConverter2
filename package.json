@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/JavierPestanoRon/TemperatureConverter2#readme",
   "devDependencies": {
+    "batch": "^0.5.3",
     "chai": "*",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
@@ -28,7 +29,7 @@
     "gulp-minify-html": "^1.0.4",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.6",
-    "karma": "*",
+    "karma": "^0.13.14",
     "karma-chrome-launcher": "*",
     "karma-firefox-launcher": "*",
     "karma-html2js-preprocessor": "^0.1.0",
