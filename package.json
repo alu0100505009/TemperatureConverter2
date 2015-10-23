@@ -28,7 +28,7 @@
     "gulp-minify-html": "^1.0.4",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.6",
-    "karma": "*",
+    "karma": "^0.13.14",
     "karma-chrome-launcher": "*",
     "karma-firefox-launcher": "*",
     "karma-html2js-preprocessor": "^0.1.0",
